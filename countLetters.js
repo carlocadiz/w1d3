@@ -1,7 +1,7 @@
 function countLetters(string){
 
   var objectLetter = {};
-  var fullString = string.split(' ').join();
+  var fullString = string.replace(/ /g,'');
 
   for (var key of fullString){
     if (objectLetter[key]){
